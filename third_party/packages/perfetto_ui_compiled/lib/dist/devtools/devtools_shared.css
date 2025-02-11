@@ -98,3 +98,7 @@ body {
 .pf-menu .pf-menu-item {
   font-size: 14px !important;
 }
+
+.topbar {
+    display: none !important;
+}

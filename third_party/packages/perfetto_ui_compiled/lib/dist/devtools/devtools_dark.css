@@ -37,7 +37,7 @@ found in the LICENSE file.
 }
 
 /* Selectors that require both default 'background-color' and 'color' properties. */
-.topbar .omnibox, 
+.topbar .omnibox,
 header.overview,
 .details-panel-heading,
 .handle .tabs .tab,
@@ -67,7 +67,7 @@ body > main,
 .home-page,
 h1,
 .pf-button.pf-minimal,
-.pf-text-input, 
+.pf-text-input,
 .pf-menu .pf-menu-item,
 .query-table, .query-table thead td,
 .notes-editor-panel,
@@ -226,4 +226,8 @@ button.pf-minimal.pf-active {
 
 input:focus-visible {
   outline-color: var(--devtools-dark-primary-color) !important;
+}
+
+.track .track-shell .track-button.full-height:hover {
+    background-color: var(--devtools-dark-border-color) !important;
 }

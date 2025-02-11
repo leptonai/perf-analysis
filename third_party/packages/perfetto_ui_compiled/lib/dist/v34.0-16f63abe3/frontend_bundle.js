@@ -3198,7 +3198,7 @@ function requireDeferred () {
 	    return Object.assign(p, { resolve, reject });
 	}
 	deferred.defer = defer;
-	
+
 	return deferred;
 }
 
@@ -3215,7 +3215,7 @@ function requirePerfetto_version () {
 	perfetto_version.SCM_REVISION = perfetto_version.VERSION = void 0;
 	perfetto_version.VERSION = "v34.0-16f63abe3";
 	perfetto_version.SCM_REVISION = "16f63abe33753ce31d9b29e3a4281a5435773fc7";
-	
+
 	return perfetto_version;
 }
 
@@ -3299,7 +3299,7 @@ function requireLogging () {
 	    throw new Error('This code should not be reachable');
 	}
 	logging.assertUnreachable = assertUnreachable;
-	
+
 	return logging;
 }
 
@@ -3416,7 +3416,7 @@ function requireString_utils () {
 	    return `'${str.replace(/'/g, '\'\'')}'`;
 	}
 	string_utils.sqliteString = sqliteString;
-	
+
 	return string_utils;
 }
 
@@ -4156,7 +4156,7 @@ function requireQuery_result () {
 		    return new WaitableQueryResultImpl(errorInfo);
 		}
 		exports.createQueryResult = createQueryResult;
-		
+
 } (query_result));
 	return query_result;
 }
@@ -4175,7 +4175,7 @@ function requireImmer_cjs_production_min () {
 	if (hasRequiredImmer_cjs_production_min) return immer_cjs_production_min;
 	hasRequiredImmer_cjs_production_min = 1;
 	function n(n){for(var r=arguments.length,t=Array(r>1?r-1:0),e=1;e<r;e++)t[e-1]=arguments[e];throw Error("[Immer] minified error nr: "+n+(t.length?" "+t.map((function(n){return "'"+n+"'"})).join(","):"")+". Find the full error at: https://bit.ly/3cXEKWf")}function r(n){return !!n&&!!n[H]}function t(n){var r;return !!n&&(function(n){if(!n||"object"!=typeof n)return !1;var r=Object.getPrototypeOf(n);if(null===r)return !0;var t=Object.hasOwnProperty.call(r,"constructor")&&r.constructor;return t===Object||"function"==typeof t&&Function.toString.call(t)===Q}(n)||Array.isArray(n)||!!n[G]||!!(null===(r=n.constructor)||void 0===r?void 0:r[G])||c(n)||v(n))}function e(n,r,t){void 0===t&&(t=!1),0===i(n)?(t?Object.keys:T)(n).forEach((function(e){t&&"symbol"==typeof e||r(e,n[e],n);})):n.forEach((function(t,e){return r(e,t,n)}));}function i(n){var r=n[H];return r?r.t>3?r.t-4:r.t:Array.isArray(n)?1:c(n)?2:v(n)?3:0}function u(n,r){return 2===i(n)?n.has(r):Object.prototype.hasOwnProperty.call(n,r)}function o(n,r){return 2===i(n)?n.get(r):n[r]}function f(n,r,t){var e=i(n);2===e?n.set(r,t):3===e?n.add(t):n[r]=t;}function a(n,r){return n===r?0!==n||1/n==1/r:n!=n&&r!=r}function c(n){return W&&n instanceof Map}function v(n){return X&&n instanceof Set}function s(n){return n.i||n.u}function p(n){if(Array.isArray(n))return Array.prototype.slice.call(n);var r=U(n);delete r[H];for(var t=T(r),e=0;e<t.length;e++){var i=t[e],u=r[i];!1===u.writable&&(u.writable=!0,u.configurable=!0),(u.get||u.set)&&(r[i]={configurable:!0,writable:!0,enumerable:u.enumerable,value:n[i]});}return Object.create(Object.getPrototypeOf(n),r)}function l(n,u){return void 0===u&&(u=!1),h(n)||r(n)||!t(n)||(i(n)>1&&(n.set=n.add=n.clear=n.delete=d),Object.freeze(n),u&&e(n,(function(n,r){return l(r,!0)}),!0)),n}function d(){n(2);}function h(n){return null==n||"object"!=typeof n||Object.isFrozen(n)}function y(r){var t=V[r];return t||n(18,r),t}function _(n,r){V[n]||(V[n]=r);}function b(){return I}function m(n,r){r&&(y("Patches"),n.o=[],n.v=[],n.s=r);}function j(n){O(n),n.p.forEach(w),n.p=null;}function O(n){n===I&&(I=n.l);}function x(n){return I={p:[],l:I,h:n,_:!0,m:0}}function w(n){var r=n[H];0===r.t||1===r.t?r.j():r.O=!0;}function S(r,e){e.m=e.p.length;var i=e.p[0],u=void 0!==r&&r!==i;return e.h.S||y("ES5").P(e,r,u),u?(i[H].g&&(j(e),n(4)),t(r)&&(r=P(e,r),e.l||M(e,r)),e.o&&y("Patches").M(i[H].u,r,e.o,e.v)):r=P(e,i,[]),j(e),e.o&&e.s(e.o,e.v),r!==B?r:void 0}function P(n,r,t){if(h(r))return r;var i=r[H];if(!i)return e(r,(function(e,u){return g(n,i,r,e,u,t)}),!0),r;if(i.A!==n)return r;if(!i.g)return M(n,i.u,!0),i.u;if(!i.R){i.R=!0,i.A.m--;var u=4===i.t||5===i.t?i.i=p(i.k):i.i,o=u,f=!1;3===i.t&&(o=new Set(u),u.clear(),f=!0),e(o,(function(r,e){return g(n,i,u,r,e,t,f)})),M(n,u,!1),t&&n.o&&y("Patches").F(i,t,n.o,n.v);}return i.i}function g(n,e,i,o,a,c,v){if(r(a)){var s=P(n,a,c&&e&&3!==e.t&&!u(e.N,o)?c.concat(o):void 0);if(f(i,o,s),!r(s))return;n._=!1;}else v&&i.add(a);if(t(a)&&!h(a)){if(!n.h.D&&n.m<1)return;P(n,a),e&&e.A.l||M(n,a);}}function M(n,r,t){void 0===t&&(t=!1),!n.l&&n.h.D&&n._&&l(r,t);}function A(n,r){var t=n[H];return (t?s(t):n)[r]}function z(n,r){if(r in n)for(var t=Object.getPrototypeOf(n);t;){var e=Object.getOwnPropertyDescriptor(t,r);if(e)return e;t=Object.getPrototypeOf(t);}}function E(n){n.g||(n.g=!0,n.l&&E(n.l));}function R(n){n.i||(n.i=p(n.u));}function k(n,r,t){var e=c(r)?y("MapSet").K(r,t):v(r)?y("MapSet").$(r,t):n.S?function(n,r){var t=Array.isArray(n),e={t:t?1:0,A:r?r.A:b(),g:!1,R:!1,N:{},l:r,u:n,k:null,i:null,j:null,C:!1},i=e,u=Y;t&&(i=[e],u=Z);var o=Proxy.revocable(i,u),f=o.revoke,a=o.proxy;return e.k=a,e.j=f,a}(r,t):y("ES5").I(r,t);return (t?t.A:b()).p.push(e),e}function F(u){return r(u)||n(22,u),function n(r){if(!t(r))return r;var u,a=r[H],c=i(r);if(a){if(!a.g&&(a.t<4||!y("ES5").J(a)))return a.u;a.R=!0,u=N(r,c),a.R=!1;}else u=N(r,c);return e(u,(function(r,t){a&&o(a.u,r)===t||f(u,r,n(t));})),3===c?new Set(u):u}(u)}function N(n,r){switch(r){case 2:return new Map(n);case 3:return Array.from(n)}return p(n)}function D(){function n(n,r){var t=f[n];return t?t.enumerable=r:f[n]=t={configurable:!0,enumerable:r,get:function(){return Y.get(this[H],n)},set:function(r){Y.set(this[H],n,r);}},t}function t(n){for(var r=n.length-1;r>=0;r--){var t=n[r][H];if(!t.g)switch(t.t){case 5:o(t)&&E(t);break;case 4:i(t)&&E(t);}}}function i(n){for(var r=n.u,t=n.k,e=T(t),i=e.length-1;i>=0;i--){var o=e[i];if(o!==H){var f=r[o];if(void 0===f&&!u(r,o))return !0;var c=t[o],v=c&&c[H];if(v?v.u!==f:!a(c,f))return !0}}var s=!!r[H];return e.length!==T(r).length+(s?0:1)}function o(n){var r=n.k;if(r.length!==n.u.length)return !0;var t=Object.getOwnPropertyDescriptor(r,r.length-1);if(t&&!t.get)return !0;for(var e=0;e<r.length;e++)if(!r.hasOwnProperty(e))return !0;return !1}var f={};_("ES5",{I:function(r,t){var e=Array.isArray(r),i=function(r,t){if(r){for(var e=Array(t.length),i=0;i<t.length;i++)Object.defineProperty(e,""+i,n(i,!0));return e}var u=U(t);delete u[H];for(var o=T(u),f=0;f<o.length;f++){var a=o[f];u[a]=n(a,r||!!u[a].enumerable);}return Object.create(Object.getPrototypeOf(t),u)}(e,r),u={t:e?5:4,A:t?t.A:b(),g:!1,R:!1,N:{},l:t,u:r,k:i,i:null,O:!1,C:!1};return Object.defineProperty(i,H,{value:u,writable:!0}),i},P:function(n,i,f){f?r(i)&&i[H].A===n&&t(n.p):(n.o&&function n(r){if(r&&"object"==typeof r){var t=r[H];if(t){var i=t.u,f=t.k,a=t.N,c=t.t;if(4===c)e(f,(function(r){r!==H&&(void 0!==i[r]||u(i,r)?a[r]||n(f[r]):(a[r]=!0,E(t)));})),e(i,(function(n){void 0!==f[n]||u(f,n)||(a[n]=!1,E(t));}));else if(5===c){if(o(t)&&(E(t),a.length=!0),f.length<i.length)for(var v=f.length;v<i.length;v++)a[v]=!1;else for(var s=i.length;s<f.length;s++)a[s]=!0;for(var p=Math.min(f.length,i.length),l=0;l<p;l++)f.hasOwnProperty(l)||(a[l]=!0),void 0===a[l]&&n(f[l]);}}}}(n.p[0]),t(n.p));},J:function(n){return 4===n.t?i(n):o(n)}});}function K(){function f(n){if(!t(n))return n;if(Array.isArray(n))return n.map(f);if(c(n))return new Map(Array.from(n.entries()).map((function(n){return [n[0],f(n[1])]})));if(v(n))return new Set(Array.from(n).map(f));var r=Object.create(Object.getPrototypeOf(n));for(var e in n)r[e]=f(n[e]);return u(n,G)&&(r[G]=n[G]),r}function a(n){return r(n)?f(n):n}var s="add";_("Patches",{W:function(r,t){return t.forEach((function(t){for(var e=t.path,u=t.op,a=r,c=0;c<e.length-1;c++){var v=i(a),p=e[c];"string"!=typeof p&&"number"!=typeof p&&(p=""+p),0!==v&&1!==v||"__proto__"!==p&&"constructor"!==p||n(24),"function"==typeof a&&"prototype"===p&&n(24),"object"!=typeof(a=o(a,p))&&n(15,e.join("/"));}var l=i(a),d=f(t.value),h=e[e.length-1];switch(u){case"replace":switch(l){case 2:return a.set(h,d);case 3:n(16);default:return a[h]=d}case s:switch(l){case 1:return "-"===h?a.push(d):a.splice(h,0,d);case 2:return a.set(h,d);case 3:return a.add(d);default:return a[h]=d}case"remove":switch(l){case 1:return a.splice(h,1);case 2:return a.delete(h);case 3:return a.delete(t.value);default:return delete a[h]}default:n(17,u);}})),r},F:function(n,r,t,i){switch(n.t){case 0:case 4:case 2:return function(n,r,t,i){var f=n.u,c=n.i;e(n.N,(function(n,e){var v=o(f,n),p=o(c,n),l=e?u(f,n)?"replace":s:"remove";if(v!==p||"replace"!==l){var d=r.concat(n);t.push("remove"===l?{op:l,path:d}:{op:l,path:d,value:p}),i.push(l===s?{op:"remove",path:d}:"remove"===l?{op:s,path:d,value:a(v)}:{op:"replace",path:d,value:a(v)});}}));}(n,r,t,i);case 5:case 1:return function(n,r,t,e){var i=n.u,u=n.N,o=n.i;if(o.length<i.length){var f=[o,i];i=f[0],o=f[1];var c=[e,t];t=c[0],e=c[1];}for(var v=0;v<i.length;v++)if(u[v]&&o[v]!==i[v]){var p=r.concat([v]);t.push({op:"replace",path:p,value:a(o[v])}),e.push({op:"replace",path:p,value:a(i[v])});}for(var l=i.length;l<o.length;l++){var d=r.concat([l]);t.push({op:s,path:d,value:a(o[l])});}i.length<o.length&&e.push({op:"replace",path:r.concat(["length"]),value:i.length});}(n,r,t,i);case 3:return function(n,r,t,e){var i=n.u,u=n.i,o=0;i.forEach((function(n){if(!u.has(n)){var i=r.concat([o]);t.push({op:"remove",path:i,value:n}),e.unshift({op:s,path:i,value:n});}o++;})),o=0,u.forEach((function(n){if(!i.has(n)){var u=r.concat([o]);t.push({op:s,path:u,value:n}),e.unshift({op:"remove",path:u,value:n});}o++;}));}(n,r,t,i)}},M:function(n,r,t,e){t.push({op:"replace",path:[],value:r===B?void 0:r}),e.push({op:"replace",path:[],value:n});}});}function $(){function r(n,r){function t(){this.constructor=n;}f(n,r),n.prototype=(t.prototype=r.prototype,new t);}function i(n){n.i||(n.N=new Map,n.i=new Map(n.u));}function u(n){n.i||(n.i=new Set,n.u.forEach((function(r){if(t(r)){var e=k(n.A.h,r,n);n.p.set(r,e),n.i.add(e);}else n.i.add(r);})));}function o(r){r.O&&n(3,JSON.stringify(s(r)));}var f=function(n,r){return (f=Object.setPrototypeOf||{__proto__:[]}instanceof Array&&function(n,r){n.__proto__=r;}||function(n,r){for(var t in r)r.hasOwnProperty(t)&&(n[t]=r[t]);})(n,r)},a=function(){function n(n,r){return this[H]={t:2,l:r,A:r?r.A:b(),g:!1,R:!1,i:void 0,N:void 0,u:n,k:this,C:!1,O:!1},this}r(n,Map);var u=n.prototype;return Object.defineProperty(u,"size",{get:function(){return s(this[H]).size}}),u.has=function(n){return s(this[H]).has(n)},u.set=function(n,r){var t=this[H];return o(t),s(t).has(n)&&s(t).get(n)===r||(i(t),E(t),t.N.set(n,!0),t.i.set(n,r),t.N.set(n,!0)),this},u.delete=function(n){if(!this.has(n))return !1;var r=this[H];return o(r),i(r),E(r),r.u.has(n)?r.N.set(n,!1):r.N.delete(n),r.i.delete(n),!0},u.clear=function(){var n=this[H];o(n),s(n).size&&(i(n),E(n),n.N=new Map,e(n.u,(function(r){n.N.set(r,!1);})),n.i.clear());},u.forEach=function(n,r){var t=this;s(this[H]).forEach((function(e,i){n.call(r,t.get(i),i,t);}));},u.get=function(n){var r=this[H];o(r);var e=s(r).get(n);if(r.R||!t(e))return e;if(e!==r.u.get(n))return e;var u=k(r.A.h,e,r);return i(r),r.i.set(n,u),u},u.keys=function(){return s(this[H]).keys()},u.values=function(){var n,r=this,t=this.keys();return (n={})[L]=function(){return r.values()},n.next=function(){var n=t.next();return n.done?n:{done:!1,value:r.get(n.value)}},n},u.entries=function(){var n,r=this,t=this.keys();return (n={})[L]=function(){return r.entries()},n.next=function(){var n=t.next();if(n.done)return n;var e=r.get(n.value);return {done:!1,value:[n.value,e]}},n},u[L]=function(){return this.entries()},n}(),c=function(){function n(n,r){return this[H]={t:3,l:r,A:r?r.A:b(),g:!1,R:!1,i:void 0,u:n,k:this,p:new Map,O:!1,C:!1},this}r(n,Set);var t=n.prototype;return Object.defineProperty(t,"size",{get:function(){return s(this[H]).size}}),t.has=function(n){var r=this[H];return o(r),r.i?!!r.i.has(n)||!(!r.p.has(n)||!r.i.has(r.p.get(n))):r.u.has(n)},t.add=function(n){var r=this[H];return o(r),this.has(n)||(u(r),E(r),r.i.add(n)),this},t.delete=function(n){if(!this.has(n))return !1;var r=this[H];return o(r),u(r),E(r),r.i.delete(n)||!!r.p.has(n)&&r.i.delete(r.p.get(n))},t.clear=function(){var n=this[H];o(n),s(n).size&&(u(n),E(n),n.i.clear());},t.values=function(){var n=this[H];return o(n),u(n),n.i.values()},t.entries=function(){var n=this[H];return o(n),u(n),n.i.entries()},t.keys=function(){return this.values()},t[L]=function(){return this.values()},t.forEach=function(n,r){for(var t=this.values(),e=t.next();!e.done;)n.call(r,e.value,e.value,this),e=t.next();},n}();_("MapSet",{K:function(n,r){return new a(n,r)},$:function(n,r){return new c(n,r)}});}var C;Object.defineProperty(immer_cjs_production_min,"__esModule",{value:!0});var I,J="undefined"!=typeof Symbol&&"symbol"==typeof Symbol("x"),W="undefined"!=typeof Map,X="undefined"!=typeof Set,q="undefined"!=typeof Proxy&&void 0!==Proxy.revocable&&"undefined"!=typeof Reflect,B=J?Symbol.for("immer-nothing"):((C={})["immer-nothing"]=!0,C),G=J?Symbol.for("immer-draftable"):"__$immer_draftable",H=J?Symbol.for("immer-state"):"__$immer_state",L="undefined"!=typeof Symbol&&Symbol.iterator||"@@iterator",Q=""+Object.prototype.constructor,T="undefined"!=typeof Reflect&&Reflect.ownKeys?Reflect.ownKeys:void 0!==Object.getOwnPropertySymbols?function(n){return Object.getOwnPropertyNames(n).concat(Object.getOwnPropertySymbols(n))}:Object.getOwnPropertyNames,U=Object.getOwnPropertyDescriptors||function(n){var r={};return T(n).forEach((function(t){r[t]=Object.getOwnPropertyDescriptor(n,t);})),r},V={},Y={get:function(n,r){if(r===H)return n;var e=s(n);if(!u(e,r))return function(n,r,t){var e,i=z(r,t);return i?"value"in i?i.value:null===(e=i.get)||void 0===e?void 0:e.call(n.k):void 0}(n,e,r);var i=e[r];return n.R||!t(i)?i:i===A(n.u,r)?(R(n),n.i[r]=k(n.A.h,i,n)):i},has:function(n,r){return r in s(n)},ownKeys:function(n){return Reflect.ownKeys(s(n))},set:function(n,r,t){var e=z(s(n),r);if(null==e?void 0:e.set)return e.set.call(n.k,t),!0;if(!n.g){var i=A(s(n),r),o=null==i?void 0:i[H];if(o&&o.u===t)return n.i[r]=t,n.N[r]=!1,!0;if(a(t,i)&&(void 0!==t||u(n.u,r)))return !0;R(n),E(n);}return n.i[r]===t&&(void 0!==t||r in n.i)||Number.isNaN(t)&&Number.isNaN(n.i[r])||(n.i[r]=t,n.N[r]=!0),!0},deleteProperty:function(n,r){return void 0!==A(n.u,r)||r in n.u?(n.N[r]=!1,R(n),E(n)):delete n.N[r],n.i&&delete n.i[r],!0},getOwnPropertyDescriptor:function(n,r){var t=s(n),e=Reflect.getOwnPropertyDescriptor(t,r);return e?{writable:!0,configurable:1!==n.t||"length"!==r,enumerable:e.enumerable,value:t[r]}:e},defineProperty:function(){n(11);},getPrototypeOf:function(n){return Object.getPrototypeOf(n.u)},setPrototypeOf:function(){n(12);}},Z={};e(Y,(function(n,r){Z[n]=function(){return arguments[0]=arguments[0][0],r.apply(this,arguments)};})),Z.deleteProperty=function(n,r){return Z.set.call(this,n,r,void 0)},Z.set=function(n,r,t){return Y.set.call(this,n[0],r,t,n[0])};var nn=function(){function e(r){var e=this;this.S=q,this.D=!0,this.produce=function(r,i,u){if("function"==typeof r&&"function"!=typeof i){var o=i;i=r;var f=e;return function(n){var r=this;void 0===n&&(n=o);for(var t=arguments.length,e=Array(t>1?t-1:0),u=1;u<t;u++)e[u-1]=arguments[u];return f.produce(n,(function(n){var t;return (t=i).call.apply(t,[r,n].concat(e))}))}}var a;if("function"!=typeof i&&n(6),void 0!==u&&"function"!=typeof u&&n(7),t(r)){var c=x(e),v=k(e,r,void 0),s=!0;try{a=i(v),s=!1;}finally{s?j(c):O(c);}return "undefined"!=typeof Promise&&a instanceof Promise?a.then((function(n){return m(c,u),S(n,c)}),(function(n){throw j(c),n})):(m(c,u),S(a,c))}if(!r||"object"!=typeof r){if(void 0===(a=i(r))&&(a=r),a===B&&(a=void 0),e.D&&l(a,!0),u){var p=[],d=[];y("Patches").M(r,a,p,d),u(p,d);}return a}n(21,r);},this.produceWithPatches=function(n,r){if("function"==typeof n)return function(r){for(var t=arguments.length,i=Array(t>1?t-1:0),u=1;u<t;u++)i[u-1]=arguments[u];return e.produceWithPatches(r,(function(r){return n.apply(void 0,[r].concat(i))}))};var t,i,u=e.produce(n,r,(function(n,r){t=n,i=r;}));return "undefined"!=typeof Promise&&u instanceof Promise?u.then((function(n){return [n,t,i]})):[u,t,i]},"boolean"==typeof(null==r?void 0:r.useProxies)&&this.setUseProxies(r.useProxies),"boolean"==typeof(null==r?void 0:r.autoFreeze)&&this.setAutoFreeze(r.autoFreeze);}var i=e.prototype;return i.createDraft=function(e){t(e)||n(8),r(e)&&(e=F(e));var i=x(this),u=k(this,e,void 0);return u[H].C=!0,O(i),u},i.finishDraft=function(n,r){var t=(n&&n[H]).A;return m(t,r),S(void 0,t)},i.setAutoFreeze=function(n){this.D=n;},i.setUseProxies=function(r){r&&!q&&n(20),this.S=r;},i.applyPatches=function(n,t){var e;for(e=t.length-1;e>=0;e--){var i=t[e];if(0===i.path.length&&"replace"===i.op){n=i.value;break}}e>-1&&(t=t.slice(e+1));var u=y("Patches").W;return r(n)?u(n,t):this.produce(n,(function(n){return u(n,t)}))},e}(),rn=new nn,tn=rn.produce,en=rn.produceWithPatches.bind(rn),un=rn.setAutoFreeze.bind(rn),on=rn.setUseProxies.bind(rn),fn=rn.applyPatches.bind(rn),an=rn.createDraft.bind(rn),cn=rn.finishDraft.bind(rn);immer_cjs_production_min.Immer=nn,immer_cjs_production_min.applyPatches=fn,immer_cjs_production_min.castDraft=function(n){return n},immer_cjs_production_min.castImmutable=function(n){return n},immer_cjs_production_min.createDraft=an,immer_cjs_production_min.current=F,immer_cjs_production_min.default=tn,immer_cjs_production_min.enableAllPlugins=function(){D(),$(),K();},immer_cjs_production_min.enableES5=D,immer_cjs_production_min.enableMapSet=$,immer_cjs_production_min.enablePatches=K,immer_cjs_production_min.finishDraft=cn,immer_cjs_production_min.freeze=l,immer_cjs_production_min.immerable=G,immer_cjs_production_min.isDraft=r,immer_cjs_production_min.isDraftable=t,immer_cjs_production_min.nothing=B,immer_cjs_production_min.original=function(t){return r(t)||n(23,t),t[H].u},immer_cjs_production_min.produce=tn,immer_cjs_production_min.produceWithPatches=en,immer_cjs_production_min.setAutoFreeze=un,immer_cjs_production_min.setUseProxies=on;
-	
+
 	return immer_cjs_production_min;
 }
 
@@ -6591,7 +6591,7 @@ function requireConversion_jobs () {
 		    ConversionJobStatus["InProgress"] = "InProgress";
 		    ConversionJobStatus["NotRunning"] = "NotRunning";
 		})(exports.ConversionJobStatus || (exports.ConversionJobStatus = {}));
-		
+
 } (conversion_jobs));
 	return conversion_jobs;
 }
@@ -6801,7 +6801,7 @@ function requireValidators () {
 	    return new ArrayValidator(elementValidator);
 	}
 	validators.arrayOf = arrayOf;
-	
+
 	return validators;
 }
 
@@ -6900,7 +6900,7 @@ function requireRecord_config_types () {
 		    return (0, validators_1.runValidator)(exports.recordConfigValidator, {}).result;
 		}
 		exports.createEmptyRecordConfig = createEmptyRecordConfig;
-		
+
 } (record_config_types));
 	return record_config_types;
 }
@@ -7331,7 +7331,7 @@ function requireState () {
 		    return parentId;
 		}
 		exports.getContainingTrackId = getContainingTrackId;
-		
+
 } (state));
 	return state;
 }
@@ -7510,7 +7510,7 @@ function requireRecord_config () {
 	}
 	record_config.RecordTargetStore = RecordTargetStore;
 	record_config.recordTargetStore = new RecordTargetStore();
-	
+
 	return record_config;
 }
 
@@ -7679,7 +7679,7 @@ function requireFeature_flags () {
 		    description: 'Record using V2 interface',
 		    defaultValue: false,
 		});
-		
+
 } (feature_flags));
 	return feature_flags;
 }
@@ -7834,7 +7834,7 @@ function requireEmpty_state$1 () {
 		    };
 		}
 		exports.createEmptyState = createEmptyState;
-		
+
 } (empty_state$1));
 	return empty_state$1;
 }
@@ -7957,7 +7957,7 @@ function requireTime () {
 	    }
 	}
 	time.TimeSpan = TimeSpan;
-	
+
 	return time;
 }
 
@@ -8019,7 +8019,7 @@ function requireChannels () {
 		    globals_1.globals.rafScheduler.scheduleFullRedraw();
 		}
 		exports.setChannel = setChannel;
-		
+
 } (channels));
 	return channels;
 }
@@ -8171,7 +8171,7 @@ function requireRouter () {
 		    }
 		}
 		exports.Router = Router;
-		
+
 } (router));
 	return router;
 }
@@ -8287,7 +8287,7 @@ function requireAnalytics () {
 	        return true;
 	    }
 	}
-	
+
 	return analytics;
 }
 
@@ -8345,7 +8345,7 @@ function requireRate_limiters () {
 	    };
 	}
 	rate_limiters.debounce = debounce;
-	
+
 	return rate_limiters;
 }
 
@@ -8444,7 +8444,7 @@ function requireTime_scale () {
 	    return new time_1.TimeSpan(newStartTime, newEndTime);
 	}
 	time_scale.computeZoom = computeZoom;
-	
+
 	return time_scale;
 }
 
@@ -8618,7 +8618,7 @@ function requireFrontend_local_state () {
 	    }
 	}
 	frontend_local_state.FrontendLocalState = FrontendLocalState;
-	
+
 	return frontend_local_state;
 }
 
@@ -8746,7 +8746,7 @@ function requirePerf () {
 		    }
 		}
 		exports.perfDisplay = new PerfDisplay();
-		
+
 } (perf));
 	return perf;
 }
@@ -8909,7 +8909,7 @@ function requireRaf_scheduler () {
 	    }
 	}
 	raf_scheduler.RafScheduler = RafScheduler;
-	
+
 	return raf_scheduler;
 }
 
@@ -8981,7 +8981,7 @@ function requireErrors () {
 	    }
 	}
 	errors.ignoreCacheUnactionableErrors = ignoreCacheUnactionableErrors;
-	
+
 	return errors;
 }
 
@@ -9140,7 +9140,7 @@ function requireService_worker_controller () {
 	    }
 	}
 	service_worker_controller.ServiceWorkerController = ServiceWorkerController;
-	
+
 	return service_worker_controller;
 }
 
@@ -9556,7 +9556,7 @@ function requireGlobals () {
 		    }
 		}
 		exports.globals = new Globals();
-		
+
 } (globals));
 	return globals;
 }
@@ -9609,7 +9609,7 @@ function requireComparator_builder () {
 	    }
 	}
 	comparator_builder.EqualsBuilder = EqualsBuilder;
-	
+
 	return comparator_builder;
 }
 
@@ -9684,7 +9684,7 @@ function requirePivot_table_types () {
 	    return `${aggregation.aggregationFunction}:${columnKey(aggregation.column)}`;
 	}
 	pivot_table_types.aggregationKey = aggregationKey;
-	
+
 	return pivot_table_types;
 }
 
@@ -10925,7 +10925,7 @@ function requireHash () {
 	    return Math.abs(hash) % max;
 	}
 	hash.hash = hash$1;
-	
+
 	return hash;
 }
 
@@ -11310,7 +11310,7 @@ function requireHsluv_cache () {
 	    return cache.get(hue, saturation, lightness);
 	}
 	hsluv_cache.cachedHsluvToHex = cachedHsluvToHex;
-	
+
 	return hsluv_cache;
 }
 
@@ -11498,7 +11498,7 @@ function requireColorizer () {
 		    return (x.h - y.h) || (x.s - y.s) || (x.l - y.l);
 		}
 		exports.colorCompare = colorCompare;
-		
+
 } (colorizer));
 	return colorizer;
 }
@@ -11570,7 +11570,7 @@ function requireDragndrop_logic () {
 	    return result;
 	}
 	dragndrop_logic.performReordering = performReordering;
-	
+
 	return dragndrop_logic;
 }
 
@@ -11702,7 +11702,7 @@ function requireFlamegraph_util () {
 		    return totalSize;
 		}
 		exports.findRootSize = findRootSize;
-		
+
 } (flamegraph_util));
 	return flamegraph_util;
 }
@@ -269726,7 +269726,7 @@ function requireProtos () {
 	protos$1.TracePacket = TracePacket;
 	var PerfettoMetatrace = protos_1.default.perfetto.protos.PerfettoMetatrace;
 	protos$1.PerfettoMetatrace = PerfettoMetatrace;
-	
+
 	return protos$1;
 }
 
@@ -269840,7 +269840,7 @@ function requireMetatracing () {
 	    }
 	}
 	metatracing.traceEventEnd = traceEventEnd;
-	
+
 	return metatracing;
 }
 
@@ -270019,7 +270019,7 @@ function requireActions () {
 		            (0, logging_1.assertExists)(state.trackGroups[args.trackGroup]).tracks.push(id);
 		        }
 		    },
-		    addTrackGroup(state, 
+		    addTrackGroup(state,
 		    // Define ID in action so a track group can be referred to without running
 		    // the reducer.
 		    args) {
@@ -270781,7 +270781,7 @@ function requireActions () {
 		        };
 		    },
 		});
-		
+
 } (actions));
 	return actions;
 }
@@ -270821,7 +270821,7 @@ function requireImmer_init () {
 	    (0, immer_1.enableMapSet)();
 	}
 	immer_init.initializeImmerJs = initializeImmerJs;
-	
+
 	return immer_init;
 }
 
@@ -270885,7 +270885,7 @@ function requireRegistry () {
 	    }
 	}
 	registry.Registry = Registry;
-	
+
 	return registry;
 }
 
@@ -270913,7 +270913,7 @@ function requireTrack_data () {
 	track_data.LIMIT = void 0;
 	// TODO(hjd): Refactor into method on TrackController
 	track_data.LIMIT = 10000;
-	
+
 	return track_data;
 }
 
@@ -270945,7 +270945,7 @@ function requireAggregation_data () {
 	    return data.columns.length === 0 || data.columns[0].data.length === 0;
 	}
 	aggregation_data.isEmptyData = isEmptyData;
-	
+
 	return aggregation_data;
 }
 
@@ -270974,7 +270974,7 @@ function requireLogs () {
 	logs.LogExistsKey = 'log-exists';
 	logs.LogBoundsKey = 'log-bounds';
 	logs.LogEntriesKey = 'log-entries';
-	
+
 	return logs;
 }
 
@@ -271025,7 +271025,7 @@ function requireKeyboard_layout_map () {
 	    }
 	}
 	keyboard_layout_map.nativeKeyboardLayoutMap = nativeKeyboardLayoutMap;
-	
+
 	return keyboard_layout_map;
 }
 
@@ -271280,7 +271280,7 @@ function requireModal () {
 		    return promise;
 		}
 		exports.showModal = showModal;
-		
+
 } (modal));
 	return modal;
 }
@@ -271344,7 +271344,7 @@ function requireAnimation () {
 	    }
 	}
 	animation.Animation = Animation;
-	
+
 	return animation;
 }
 
@@ -271426,7 +271426,7 @@ function requireDrag_gesture_handler () {
 	    }
 	}
 	drag_gesture_handler.DragGestureHandler = DragGestureHandler;
-	
+
 	return drag_gesture_handler;
 }
 
@@ -271707,7 +271707,7 @@ function requirePan_and_zoom_handler () {
 		    }
 		}
 		exports.PanAndZoomHandler = PanAndZoomHandler;
-		
+
 } (pan_and_zoom_handler));
 	return pan_and_zoom_handler;
 }
@@ -271743,7 +271743,7 @@ function requireClassnames () {
 	    return args.flat().filter((x) => x).join(' ');
 	}
 	classnames.classNames = classNames;
-	
+
 	return classnames;
 }
 
@@ -271778,7 +271778,7 @@ function requireSpinner () {
 	    }
 	}
 	spinner.Spinner = Spinner;
-	
+
 	return spinner;
 }
 
@@ -271881,7 +271881,7 @@ function requireHelp_modal () {
 	        buttons: [],
 	    });
 	}
-	
+
 	return help_modal;
 }
 
@@ -272034,7 +272034,7 @@ function requireScroll_helper () {
 	    horizontalScrollToTs(ts);
 	}
 	scroll_helper.scrollToTrackAndTs = scrollToTrackAndTs;
-	
+
 	return scroll_helper;
 }
 
@@ -272149,7 +272149,7 @@ function requireBinary_search () {
 	    }
 	}
 	binary_search.searchSegment = searchSegment;
-	
+
 	return binary_search;
 }
 
@@ -272253,7 +272253,7 @@ function requireSearch_handler () {
 	        globals_1.globals.dispatch(actions_1.Actions.selectChromeSlice({ id: currentId, trackId, table: 'slice', scroll: true }));
 	    }
 	}
-	
+
 	return search_handler;
 }
 
@@ -272528,7 +272528,7 @@ function requireKeyboard_event_handler () {
 	    }
 	}
 	keyboard_event_handler.findCurrentSelection = findCurrentSelection;
-	
+
 	return keyboard_event_handler;
 }
 
@@ -272721,7 +272721,7 @@ function requirePublish () {
 	    globals_1.globals.publishRedraw();
 	}
 	publish.publishFtracePanelData = publishFtracePanelData;
-	
+
 	return publish;
 }
 
@@ -272821,7 +272821,7 @@ function requireController$1 () {
 	    }
 	}
 	controller$1.Controller = Controller;
-	
+
 	return controller$1;
 }
 
@@ -273063,7 +273063,7 @@ function requireTrack_controller () {
 	// where SQLite sorts start to become expensive.
 	TrackController.MIN_TABLE_SIZE_TO_CACHE = 100000;
 	track_controller.trackControllerRegistry = registry_1.Registry.kindRegistry();
-	
+
 	return track_controller;
 }
 
@@ -273094,7 +273094,7 @@ function requireTrack_registry () {
 	 * Global registry that maps types to TrackCreator.
 	 */
 	track_registry.trackRegistry = registry_1.Registry.kindRegistry();
-	
+
 	return track_registry;
 }
 
@@ -273205,7 +273205,7 @@ function requirePlugins () {
 		// TODO(hjd): Sort out the story for global singletons like these:
 		exports.pluginRegistry = new PluginRegistry();
 		exports.pluginManager = new PluginManager(exports.pluginRegistry);
-		
+
 } (plugins));
 	return plugins;
 }
@@ -273243,7 +273243,7 @@ function requireSelection_observer () {
 	    selectionObservers.push(observer);
 	}
 	selection_observer.addSelectionChangeObserver = addSelectionChangeObserver;
-	
+
 	return selection_observer;
 }
 
@@ -273403,7 +273403,7 @@ function requireProto_ring_buffer () {
 	    }
 	}
 	proto_ring_buffer.ProtoRingBuffer = ProtoRingBuffer;
-	
+
 	return proto_ring_buffer;
 }
 
@@ -273803,7 +273803,7 @@ function requireEngine () {
 	    }
 	}
 	engine.EngineProxy = EngineProxy;
-	
+
 	return engine;
 }
 
@@ -273878,7 +273878,7 @@ function requireWasm_engine_proxy () {
 	    }
 	}
 	wasm_engine_proxy.WasmEngineProxy = WasmEngineProxy;
-	
+
 	return wasm_engine_proxy;
 }
 
@@ -273978,7 +273978,7 @@ function requireCanvas_utils () {
 	    ctx.fill();
 	}
 	canvas_utils.drawIncompleteSlice = drawIncompleteSlice;
-	
+
 	return canvas_utils;
 }
 
@@ -274041,7 +274041,7 @@ function requireCheckerboard () {
 	    }
 	}
 	checkerboard.checkerboardExcept = checkerboardExcept;
-	
+
 	return checkerboard;
 }
 
@@ -274194,7 +274194,7 @@ function requireTrack () {
 	    }
 	}
 	track.Track = Track;
-	
+
 	return track;
 }
 
@@ -274592,7 +274592,7 @@ function requireChrome_slices () {
 		    pluginId: 'perfetto.ChromeSlices',
 		    activate,
 		};
-		
+
 } (chrome_slices));
 	return chrome_slices;
 }
@@ -274753,7 +274753,7 @@ function requireActual_frames () {
 		    pluginId: 'perfetto.ActualFrames',
 		    activate,
 		};
-		
+
 } (actual_frames));
 	return actual_frames;
 }
@@ -274879,7 +274879,7 @@ function requireAndroid_log () {
 		    pluginId: 'perfetto.AndroidLog',
 		    activate,
 		};
-		
+
 } (android_log));
 	return android_log;
 }
@@ -275019,7 +275019,7 @@ function requireAsync_slices () {
 		    pluginId: 'perfetto.AsyncSlices',
 		    activate,
 		};
-		
+
 } (async_slices));
 	return async_slices;
 }
@@ -276072,7 +276072,7 @@ function requireSlice_layout () {
 		    fixedHeight: 30,
 		});
 		exports.DEFAULT_SLICE_LAYOUT = exports.SLICE_LAYOUT_FIT_CONTENT_DEFAULTS;
-		
+
 } (slice_layout));
 	return slice_layout;
 }
@@ -276233,7 +276233,7 @@ function requireTrack_cache () {
 		    }
 		}
 		exports.TrackCache = TrackCache;
-		
+
 } (track_cache));
 	return track_cache;
 }
@@ -276904,7 +276904,7 @@ function requireBase_slice_track () {
 		    }
 		}
 		exports.BaseSliceTrack = BaseSliceTrack;
-		
+
 } (base_slice_track));
 	return base_slice_track;
 }
@@ -276976,7 +276976,7 @@ function requireNamed_slice_track () {
 		    }
 		}
 		exports.NamedSliceTrack = NamedSliceTrack;
-		
+
 } (named_slice_track));
 	return named_slice_track;
 }
@@ -277049,7 +277049,7 @@ function requireQueries () {
 	    return result;
 	}
 	queries.runQuery = runQuery;
-	
+
 	return queries;
 }
 
@@ -277089,7 +277089,7 @@ function requireIcon () {
 	    }
 	}
 	icon.Icon = Icon;
-	
+
 	return icon;
 }
 
@@ -277128,7 +277128,7 @@ function requireButton () {
 	    }
 	}
 	button.Button = Button;
-	
+
 	return button;
 }
 
@@ -277180,7 +277180,7 @@ function requireForm () {
 	    }
 	}
 	form.FormLabel = FormLabel;
-	
+
 	return form;
 }
 
@@ -277215,7 +277215,7 @@ function requireSelect () {
 	    }
 	}
 	select.Select = Select;
-	
+
 	return select;
 }
 
@@ -277262,7 +277262,7 @@ function requireText_input () {
 	    }
 	}
 	text_input.TextInput = TextInput;
-	
+
 	return text_input;
 }
 
@@ -277340,7 +277340,7 @@ function requireCss_constants () {
 		        throw Error(`Could not parse CSS property "${str}" as a number`);
 		    return Number(match[1]);
 		}
-		
+
 } (css_constants));
 	return css_constants;
 }
@@ -277379,7 +277379,7 @@ function requireMath_utils () {
 	    return stepsize * Math.floor(val / stepsize);
 	}
 	math_utils.roundDownNearest = roundDownNearest;
-	
+
 	return math_utils;
 }
 
@@ -277548,7 +277548,7 @@ function requireGridline_helper () {
 		    }
 		}
 		exports.drawGridLines = drawGridLines;
-		
+
 } (gridline_helper));
 	return gridline_helper;
 }
@@ -277585,7 +277585,7 @@ function requireIcons () {
 	icons.SELECT_ALL = 'select_all';
 	icons.DESELECT = 'deselect';
 	icons.STAR = 'star';
-	
+
 	return icons;
 }
 
@@ -277620,7 +277620,7 @@ function requirePanel () {
 	        tag.prototype instanceof Panel);
 	}
 	panel.isPanelVNode = isPanelVNode;
-	
+
 	return panel;
 }
 
@@ -277663,7 +277663,7 @@ function requireVertical_line_helper () {
 	    ctx.closePath();
 	    ctx.lineWidth = prevLineWidth;
 	}
-	
+
 	return vertical_line_helper;
 }
 
@@ -278028,7 +278028,7 @@ function requireTrack_panel () {
 	    }
 	}
 	track_panel.TrackPanel = TrackPanel;
-	
+
 	return track_panel;
 }
 
@@ -278143,7 +278143,7 @@ function requireSlice_track () {
 	    }));
 	}
 	slice_track.addDebugTrack = addDebugTrack;
-	
+
 	return slice_track;
 }
 
@@ -278245,7 +278245,7 @@ function requireAdd_debug_track_menu () {
 	    }
 	}
 	add_debug_track_menu.AddDebugTrackMenu = AddDebugTrackMenu;
-	
+
 	return add_debug_track_menu;
 }
 
@@ -278486,7 +278486,7 @@ function requireBottom_tab () {
 		    }
 		}
 		exports.BottomTabList = BottomTabList;
-		
+
 } (bottom_tab));
 	return bottom_tab;
 }
@@ -278524,7 +278524,7 @@ function requireAnchor () {
 	    }
 	}
 	anchor.Anchor = Anchor;
-	
+
 	return anchor;
 }
 
@@ -278595,7 +278595,7 @@ function requireClipboard () {
 	    URL.revokeObjectURL(url);
 	}
 	clipboard.download = download;
-	
+
 	return clipboard;
 }
 
@@ -278640,7 +278640,7 @@ function requireDownload_utils () {
 	    downloadUrl(fileName, url);
 	}
 	download_utils.downloadData = downloadData;
-	
+
 	return download_utils;
 }
 
@@ -278828,7 +278828,7 @@ function requireQuery_table () {
 	    renderCanvas() { }
 	}
 	query_table.QueryTable = QueryTable;
-	
+
 	return query_table;
 }
 
@@ -280663,7 +280663,7 @@ function requirePopper () {
 	popper.popperGenerator = popperGenerator;
 	popper.popperOffsets = popperOffsets$1;
 	popper.preventOverflow = preventOverflow$1;
-	
+
 	return popper;
 }
 
@@ -280737,7 +280737,7 @@ function requirePortal () {
 	    }
 	}
 	portal.Portal = Portal;
-	
+
 	return portal;
 }
 
@@ -280793,7 +280793,7 @@ function requireUtils () {
 	    return Array.isArray(children) && children.length > 0;
 	}
 	utils.hasChildren = hasChildren;
-	
+
 	return utils;
 }
 
@@ -280994,7 +280994,7 @@ function requirePopup () {
 		exports.Popup = Popup;
 		Popup.TRIGGER_REF = 'trigger';
 		Popup.POPUP_REF = 'popup';
-		
+
 } (popup));
 	return popup;
 }
@@ -281125,7 +281125,7 @@ function requireQuery_result_tab () {
 	query_result_tab.QueryResultTab = QueryResultTab;
 	QueryResultTab.kind = 'org.perfetto.QueryResultTab';
 	bottom_tab_1.bottomTabRegistry.register(QueryResultTab);
-	
+
 	return query_result_tab;
 }
 
@@ -281237,7 +281237,7 @@ select RUN_METRIC(
 	    pluginId: 'perfetto.ChromeScrollJank',
 	    activate,
 	};
-	
+
 	return chrome_scroll_jank;
 }
 
@@ -281273,7 +281273,7 @@ function requirePlugin_api () {
 		Object.defineProperty(exports, "NUM_NULL", { enumerable: true, get: function () { return query_result_1.NUM_NULL; } });
 		Object.defineProperty(exports, "STR", { enumerable: true, get: function () { return query_result_1.STR; } });
 		Object.defineProperty(exports, "STR_NULL", { enumerable: true, get: function () { return query_result_1.STR_NULL; } });
-		
+
 } (plugin_api));
 	return plugin_api;
 }
@@ -281407,7 +281407,7 @@ function requirePopup_menu () {
 	                        }
 	                        globals_1.globals.rafScheduler.scheduleFullRedraw();
 	                    },
-	                }, 
+	                },
 	                // Show text with up/down arrow, depending on expanded state.
 	                item.text + (isExpanded ? ' \u25B2' : ' \u25BC')), isExpanded ? (0, mithril_1.default)('div.nested-menu', item.children.map((item) => this.renderItem(item))) :
 	                    null);
@@ -281422,7 +281422,7 @@ function requirePopup_menu () {
 	    }
 	}
 	popup_menu.PopupMenuButton = PopupMenuButton;
-	
+
 	return popup_menu;
 }
 
@@ -281920,7 +281920,7 @@ function requireCounter () {
 		    pluginId: 'perfetto.Counter',
 		    activate,
 		};
-		
+
 } (counter));
 	return counter;
 }
@@ -282322,7 +282322,7 @@ function requireCpu_freq () {
 		    pluginId: 'perfetto.CpuFreq',
 		    activate,
 		};
-		
+
 } (cpu_freq));
 	return cpu_freq;
 }
@@ -282526,7 +282526,7 @@ function requireCpu_profile () {
 		    pluginId: 'perfetto.CpuProfile',
 		    activate,
 		};
-		
+
 } (cpu_profile));
 	return cpu_profile;
 }
@@ -282919,7 +282919,7 @@ function requireCpu_slices () {
 		    pluginId: 'perfetto.CpuSlices',
 		    activate,
 		};
-		
+
 } (cpu_slices));
 	return cpu_slices;
 }
@@ -282954,7 +282954,7 @@ function requireDebug$1 () {
 	    pluginId: 'perfetto.DebugSlices',
 	    activate,
 	};
-	
+
 	return debug$1;
 }
 
@@ -283097,7 +283097,7 @@ function requireExpected_frames () {
 		    pluginId: 'perfetto.ExpectedFrames',
 		    activate,
 		};
-		
+
 } (expected_frames));
 	return expected_frames;
 }
@@ -283228,7 +283228,7 @@ function requireFtrace () {
 		    pluginId: 'perfetto.FtraceRaw',
 		    activate,
 		};
-		
+
 } (ftrace));
 	return ftrace;
 }
@@ -283279,7 +283279,7 @@ function requireGeneric_slice_track () {
 	    pluginId: 'perfetto.GenericSliceTrack',
 	    activate,
 	};
-	
+
 	return generic_slice_track;
 }
 
@@ -283626,7 +283626,7 @@ function requireFlamegraph () {
 	    return { lineWidth, lines };
 	}
 	flamegraph.splitIfTooBig = splitIfTooBig;
-	
+
 	return flamegraph;
 }
 
@@ -283809,7 +283809,7 @@ function requirePerf_samples_profile () {
 		    pluginId: 'perfetto.PerfSamplesProfile',
 		    activate,
 		};
-		
+
 } (perf_samples_profile));
 	return perf_samples_profile;
 }
@@ -283873,7 +283873,7 @@ function requireArea_selection_handler () {
 	    }
 	}
 	area_selection_handler.AreaSelectionHandler = AreaSelectionHandler;
-	
+
 	return area_selection_handler;
 }
 
@@ -284281,7 +284281,7 @@ function requireFlamegraph_controller () {
 	    }
 	}
 	flamegraph_controller.FlamegraphController = FlamegraphController;
-	
+
 	return flamegraph_controller;
 }
 
@@ -284467,7 +284467,7 @@ function requireHeap_profile () {
 		    pluginId: 'perfetto.HeapProfile',
 		    activate,
 		};
-		
+
 } (heap_profile));
 	return heap_profile;
 }
@@ -284519,7 +284519,7 @@ function requireNull_track () {
 		    pluginId: 'perfetto.NullTrack',
 		    activate,
 		};
-		
+
 } (null_track));
 	return null_track;
 }
@@ -284797,7 +284797,7 @@ function requireProcess_scheduling () {
 		    pluginId: 'perfetto.ProcessScheduling',
 		    activate,
 		};
-		
+
 } (process_scheduling));
 	return process_scheduling;
 }
@@ -284981,7 +284981,7 @@ function requireProcess_summary () {
 		    pluginId: 'perfetto.ProcessSummary',
 		    activate,
 		};
-		
+
 } (process_summary));
 	return process_summary;
 }
@@ -285052,7 +285052,7 @@ function requireThread_state$2 () {
 	    return result;
 	}
 	thread_state$1.translateState = translateState;
-	
+
 	return thread_state$1;
 }
 
@@ -285300,7 +285300,7 @@ function requireThread_state$1 () {
 		    pluginId: 'perfetto.ThreadState',
 		    activate,
 		};
-		
+
 } (thread_state$2));
 	return thread_state$2;
 }
@@ -285371,7 +285371,7 @@ function requireVisualised_args () {
 		    pluginId: 'perfetto.VisualisedArgs',
 		    activate,
 		};
-		
+
 } (visualised_args));
 	return visualised_args;
 }
@@ -285423,7 +285423,7 @@ function requireAll_tracks () {
 	plugins_1.pluginRegistry.register(process_summary_1.plugin);
 	plugins_1.pluginRegistry.register(thread_state_1.plugin);
 	plugins_1.pluginRegistry.register(visualised_args_1.plugin);
-	
+
 	return all_tracks;
 }
 
@@ -287359,7 +287359,7 @@ function requireRecording_utils () {
 		exports.PARSING_UNRECOGNIZED_PORT = 'Unrecognized consumer port response';
 		exports.PARSING_UNRECOGNIZED_MESSAGE = 'Unrecognized frame message';
 		// End Traced ///////////////////////////////////////////////////////////
-		
+
 } (recording_utils));
 	return recording_utils;
 }
@@ -287483,7 +287483,7 @@ function requireUpload_utils () {
 		        .join('');
 		}
 		exports.toSha256 = toSha256;
-		
+
 } (upload_utils));
 	return upload_utils;
 }
@@ -287529,7 +287529,7 @@ function requireTrace_attrs () {
 	    return true;
 	}
 	trace_attrs.isDownloadable = isDownloadable;
-	
+
 	return trace_attrs;
 }
 
@@ -287740,7 +287740,7 @@ function requireError_dialog () {
 	    (0, modal_1.showModal)({
 	        title: 'A WebUSB error occurred',
 	        content: (0, mithril_1.default)('div', (0, mithril_1.default)('span', `Is adb already running on the host? Run this command and
-      try again.`), (0, mithril_1.default)('br'), (0, mithril_1.default)('.modal-bash', '> adb kill-server'), (0, mithril_1.default)('br'), 
+      try again.`), (0, mithril_1.default)('br'), (0, mithril_1.default)('.modal-bash', '> adb kill-server'), (0, mithril_1.default)('br'),
 	        // The statement below covers the following edge case:
 	        // 1. 'adb server' is running on the device.
 	        // 2. The user selects the new Android target, so we try to fetch the
@@ -287827,7 +287827,7 @@ at most one tab at a time.`)),
 	        buttons: [],
 	    });
 	}
-	
+
 	return error_dialog;
 }
 
@@ -287948,7 +287948,7 @@ function requireRecording_error_handling () {
 	class RecordingError extends Error {
 	}
 	recording_error_handling.RecordingError = RecordingError;
-	
+
 	return recording_error_handling;
 }
 
@@ -288094,7 +288094,7 @@ function requireAdb_auth () {
 	    }
 	}
 	adb_auth.AdbKey = AdbKey;
-	
+
 	return adb_auth;
 }
 
@@ -288191,7 +288191,7 @@ function requireAdb_key_manager () {
 	    }
 	}
 	adb_key_manager.AdbKeyManager = AdbKeyManager;
-	
+
 	return adb_key_manager;
 }
 
@@ -288245,7 +288245,7 @@ function requireTarget_factory_registry () {
 	target_factory_registry.targetFactoryRegistry = new TargetFactoryRegistry((f) => {
 	    return f.kind;
 	});
-	
+
 	return target_factory_registry;
 }
 
@@ -288380,7 +288380,7 @@ function requireArray_buffer_builder () {
 	    }
 	}
 	array_buffer_builder.ArrayBufferBuilder = ArrayBufferBuilder;
-	
+
 	return array_buffer_builder;
 }
 
@@ -288496,7 +288496,7 @@ function requireAdb_file_handler () {
 	    }
 	}
 	adb_file_handler.AdbFileHandler = AdbFileHandler;
-	
+
 	return adb_file_handler;
 }
 
@@ -288571,7 +288571,7 @@ function requireAdb_connection_impl () {
 	    }
 	}
 	adb_connection_impl.AdbConnectionImpl = AdbConnectionImpl;
-	
+
 	return adb_connection_impl;
 }
 
@@ -289074,7 +289074,7 @@ function requireAdb_connection_over_webusb () {
 		        return data;
 		    }
 		}
-		
+
 } (adb_connection_over_webusb));
 	return adb_connection_over_webusb;
 }
@@ -289113,7 +289113,7 @@ function requireHttp_utils () {
 	    });
 	}
 	http_utils.fetchWithTimeout = fetchWithTimeout;
-	
+
 	return http_utils;
 }
 
@@ -289452,7 +289452,7 @@ function requireTraced_tracing_session () {
 	    .set('DisableTracing', protos_1.DisableTracingResponse.decode)
 	    .set('GetTraceStats', protos_1.GetTraceStatsResponse.decode)
 	    .set('QueryServiceState', protos_1.QueryServiceStateResponse.decode);
-	
+
 	return traced_tracing_session;
 }
 
@@ -289572,7 +289572,7 @@ function requireAndroid_target () {
 	    }
 	}
 	android_target.AndroidTarget = AndroidTarget;
-	
+
 	return android_target;
 }
 
@@ -289617,7 +289617,7 @@ function requireAndroid_webusb_target () {
 	    }
 	}
 	android_webusb_target.AndroidWebusbTarget = AndroidWebusbTarget;
-	
+
 	return android_webusb_target;
 }
 
@@ -289740,7 +289740,7 @@ function requireAndroid_webusb_target_factory () {
 		if (navigator.usb && feature_flags_1.RECORDING_V2_FLAG.get()) {
 		    target_factory_registry_1.targetFactoryRegistry.register(new AndroidWebusbTargetFactory(navigator.usb));
 		}
-		
+
 } (android_webusb_target_factory));
 	return android_webusb_target_factory;
 }
@@ -289936,7 +289936,7 @@ function requireAdb_connection_over_websocket () {
 	    }
 	}
 	adb_connection_over_websocket.AdbOverWebsocketStream = AdbOverWebsocketStream;
-	
+
 	return adb_connection_over_websocket;
 }
 
@@ -289978,7 +289978,7 @@ function requireAndroid_websocket_target () {
 	    }
 	}
 	android_websocket_target.AndroidWebsocketTarget = AndroidWebsocketTarget;
-	
+
 	return android_websocket_target;
 }
 
@@ -290193,7 +290193,7 @@ function requireAndroid_websocket_target_factory () {
 		if (feature_flags_1.RECORDING_V2_FLAG.get()) {
 		    target_factory_registry_1.targetFactoryRegistry.register(new AndroidWebsocketTargetFactory());
 		}
-		
+
 } (android_websocket_target_factory));
 	return android_websocket_target_factory;
 }
@@ -290229,7 +290229,7 @@ function requireConstants$1 () {
 	Object.defineProperty(constants$1, "__esModule", { value: true });
 	constants$1.TRACE_SUFFIX = void 0;
 	constants$1.TRACE_SUFFIX = '.perfetto-trace';
-	
+
 	return constants$1;
 }
 
@@ -290285,7 +290285,7 @@ function requireConsumer_port_types () {
 	    return obj.type === 'DisableTracingResponse';
 	}
 	consumer_port_types.isDisableTracingResponse = isDisableTracingResponse;
-	
+
 	return consumer_port_types;
 }
 
@@ -290334,7 +290334,7 @@ function requireRecord_controller_interfaces () {
 	    }
 	}
 	record_controller_interfaces.RpcConsumerPort = RpcConsumerPort;
-	
+
 	return record_controller_interfaces;
 }
 
@@ -290420,7 +290420,7 @@ function requireChrome_proxy_record_controller () {
 	    }
 	}
 	chrome_proxy_record_controller.ChromeExtensionConsumerPort = ChromeExtensionConsumerPort;
-	
+
 	return chrome_proxy_record_controller;
 }
 
@@ -290609,7 +290609,7 @@ function requireChrome_traced_tracing_session () {
 	    }
 	}
 	chrome_traced_tracing_session.ChromeTracedTracingSession = ChromeTracedTracingSession;
-	
+
 	return chrome_traced_tracing_session;
 }
 
@@ -290679,7 +290679,7 @@ function requireChrome_target () {
 	    }
 	}
 	chrome_target.ChromeTarget = ChromeTarget;
-	
+
 	return chrome_target;
 }
 
@@ -290761,7 +290761,7 @@ function requireChrome_target_factory () {
 		if (window.chrome && chrome.runtime) {
 		    target_factory_registry_1.targetFactoryRegistry.register(new ChromeTargetFactory());
 		}
-		
+
 } (chrome_target_factory));
 	return chrome_target_factory;
 }
@@ -290845,7 +290845,7 @@ function requireHost_os_byte_stream () {
 	    }
 	}
 	host_os_byte_stream.HostOsByteStream = HostOsByteStream;
-	
+
 	return host_os_byte_stream;
 }
 
@@ -290957,7 +290957,7 @@ function requireHost_os_target () {
 	    }
 	}
 	host_os_target.HostOsTarget = HostOsTarget;
-	
+
 	return host_os_target;
 }
 
@@ -291035,7 +291035,7 @@ function requireHost_os_target_factory () {
 		if ((0, recording_utils_1.isMacOs)(navigator.userAgent) || (0, recording_utils_1.isLinux)(navigator.userAgent)) {
 		    target_factory_registry_1.targetFactoryRegistry.register(new HostOsTargetFactory());
 		}
-		
+
 } (host_os_target_factory));
 	return host_os_target_factory;
 }
@@ -291095,7 +291095,7 @@ function requireAndroid_virtual_target () {
 	    }
 	}
 	android_virtual_target.AndroidVirtualTarget = AndroidVirtualTarget;
-	
+
 	return android_virtual_target;
 }
 
@@ -291149,7 +291149,7 @@ function requireVirtual_target_factory () {
 	}
 	virtual_target_factory.VirtualTargetFactory = VirtualTargetFactory;
 	target_factory_registry_1.targetFactoryRegistry.register(new VirtualTargetFactory());
-	
+
 	return virtual_target_factory;
 }
 
@@ -291177,7 +291177,7 @@ function requireTarget_factories () {
 	requireChrome_target_factory();
 	requireHost_os_target_factory();
 	requireVirtual_target_factory();
-	
+
 	return target_factories;
 }
 
@@ -291378,7 +291378,7 @@ function requirePermalink_controller () {
 	    }
 	}
 	permalink_controller.PermalinkController = PermalinkController;
-	
+
 	return permalink_controller;
 }
 
@@ -292000,7 +292000,7 @@ function requireRecording_config_utils () {
 	    }
 	    return [...message(json, 0)].join('');
 	}
-	
+
 	return recording_config_utils;
 }
 
@@ -292562,7 +292562,7 @@ function requireAdb () {
 		    // This function is not implemented.
 		    return token.buffer;
 		}
-		
+
 } (adb));
 	return adb;
 }
@@ -292641,7 +292641,7 @@ function requireTrace_config_utils () {
 	    return false;
 	}
 	trace_config_utils.hasSystemDataSourceConfig = hasSystemDataSourceConfig;
-	
+
 	return trace_config_utils;
 }
 
@@ -292767,7 +292767,7 @@ function requireAdb_base_controller () {
 		    }
 		}
 		exports.AdbBaseConsumerPort = AdbBaseConsumerPort;
-		
+
 } (adb_base_controller));
 	return adb_base_controller;
 }
@@ -292939,7 +292939,7 @@ function requireAdb_shell_controller () {
 	    }
 	}
 	adb_shell_controller.AdbConsumerPort = AdbConsumerPort;
-	
+
 	return adb_shell_controller;
 }
 
@@ -293260,7 +293260,7 @@ function requireAdb_socket_controller () {
 	    .set('ReadBuffers', protos_1.perfetto.protos.ReadBuffersResponse.decode)
 	    .set('DisableTracing', protos_1.perfetto.protos.DisableTracingResponse.decode)
 	    .set('GetTraceStats', protos_1.perfetto.protos.GetTraceStatsResponse.decode);
-	
+
 	return adb_socket_controller;
 }
 
@@ -293656,7 +293656,7 @@ function requireRecord_controller () {
 	    }
 	}
 	record_controller.RecordController = RecordController;
-	
+
 	return record_controller;
 }
 
@@ -293848,7 +293848,7 @@ function requireCache_manager () {
 	    // ignores failures but need to upgrade TypeScript for that.
 	    await Promise.all(deletions);
 	}
-	
+
 	return cache_manager;
 }
 
@@ -293942,7 +293942,7 @@ function requireHttp_rpc_engine () {
 		    }
 		}
 		exports.HttpRpcEngine = HttpRpcEngine;
-		
+
 } (http_rpc_engine));
 	return http_rpc_engine;
 }
@@ -294109,7 +294109,7 @@ function requireAggregation_controller () {
 	    }
 	}
 	aggregation_controller.AggregationController = AggregationController;
-	
+
 	return aggregation_controller;
 }
 
@@ -294251,7 +294251,7 @@ function requireCounter_aggregation_controller () {
 	    }
 	}
 	counter_aggregation_controller.CounterAggregationController = CounterAggregationController;
-	
+
 	return counter_aggregation_controller;
 }
 
@@ -294366,7 +294366,7 @@ function requireCpu_aggregation_controller () {
 	    }
 	}
 	cpu_aggregation_controller.CpuAggregationController = CpuAggregationController;
-	
+
 	return cpu_aggregation_controller;
 }
 
@@ -294469,7 +294469,7 @@ function requireCpu_by_process_aggregation_controller () {
 	    }
 	}
 	cpu_by_process_aggregation_controller.CpuByProcessAggregationController = CpuByProcessAggregationController;
-	
+
 	return cpu_by_process_aggregation_controller;
 }
 
@@ -294571,7 +294571,7 @@ function requireFrame_aggregation_controller () {
 	    }
 	}
 	frame_aggregation_controller.FrameAggregationController = FrameAggregationController;
-	
+
 	return frame_aggregation_controller;
 }
 
@@ -294680,7 +294680,7 @@ function requireSlice_aggregation_controller () {
 	    }
 	}
 	slice_aggregation_controller.SliceAggregationController = SliceAggregationController;
-	
+
 	return slice_aggregation_controller;
 }
 
@@ -294845,7 +294845,7 @@ function requireThread_aggregation_controller () {
 	    }
 	}
 	thread_aggregation_controller.ThreadAggregationController = ThreadAggregationController;
-	
+
 	return thread_aggregation_controller;
 }
 
@@ -295007,7 +295007,7 @@ function requireCpu_profile_controller () {
 	    }
 	}
 	cpu_profile_controller.CpuProfileController = CpuProfileController;
-	
+
 	return cpu_profile_controller;
 }
 
@@ -295316,7 +295316,7 @@ function requireFlow_events_controller () {
 	    }
 	}
 	flow_events_controller.FlowEventsController = FlowEventsController;
-	
+
 	return flow_events_controller;
 }
 
@@ -295454,7 +295454,7 @@ function requireFtrace_controller () {
 	    }
 	}
 	ftrace_controller.FtraceController = FtraceController;
-	
+
 	return ftrace_controller;
 }
 
@@ -295506,7 +295506,7 @@ function requireLoading_manager () {
 	    }
 	}
 	loading_manager.LoadingManager = LoadingManager;
-	
+
 	return loading_manager;
 }
 
@@ -295575,7 +295575,7 @@ function requireQuery_utils () {
 	    return `'*${s}*'`;
 	}
 	query_utils.escapeGlob = escapeGlob;
-	
+
 	return query_utils;
 }
 
@@ -295844,7 +295844,7 @@ function requireLogs_controller () {
 	    }
 	}
 	logs_controller.LogsController = LogsController;
-	
+
 	return logs_controller;
 }
 
@@ -295913,7 +295913,7 @@ function requireMetrics_controller () {
 	    }
 	}
 	metrics_controller.MetricsController = MetricsController;
-	
+
 	return metrics_controller;
 }
 
@@ -296071,7 +296071,7 @@ function requirePivot_table_query_generator () {
 		    };
 		}
 		exports.generateQueryFromState = generateQueryFromState;
-		
+
 } (pivot_table_query_generator));
 	return pivot_table_query_generator;
 }
@@ -296334,7 +296334,7 @@ function requirePivot_table_controller () {
 		}
 		exports.PivotTableController = PivotTableController;
 		PivotTableController.detailsCount = 0;
-		
+
 } (pivot_table_controller));
 	return pivot_table_controller;
 }
@@ -296616,7 +296616,7 @@ function requireSearch_controller () {
 	    }
 	}
 	search_controller.SearchController = SearchController;
-	
+
 	return search_controller;
 }
 
@@ -296654,7 +296654,7 @@ function requireArg_types () {
 	    return typeof item === 'object' && !Array.isArray(item);
 	}
 	arg_types.isArgTreeMap = isArgTreeMap;
-	
+
 	return arg_types;
 }
 
@@ -296789,7 +296789,7 @@ function requireArgs_parser () {
 	    const indexString = segment.substring(indexStart + 1, segment.length - 1);
 	    return [segment.substring(0, indexStart), Math.floor(Number(indexString))];
 	}
-	
+
 	return args_parser;
 }
 
@@ -297257,7 +297257,7 @@ function requireSelection_controller () {
 	    }
 	}
 	selection_controller.SelectionController = SelectionController;
-	
+
 	return selection_controller;
 }
 
@@ -297307,7 +297307,7 @@ function requireTrace_error_controller () {
 	    }
 	}
 	trace_error_controller.TraceErrorController = TraceErrorController;
-	
+
 	return trace_error_controller;
 }
 
@@ -297447,7 +297447,7 @@ function requireTrace_stream () {
 	    }
 	}
 	trace_stream.TraceHttpStream = TraceHttpStream;
-	
+
 	return trace_stream;
 }
 
@@ -299119,7 +299119,7 @@ function requireTrack_decider () {
 	        }
 	    }
 	}
-	
+
 	return track_decider;
 }
 
@@ -299242,7 +299242,7 @@ function requireVisualised_args_controller () {
 	    }
 	}
 	visualised_args_controller.VisualisedArgController = VisualisedArgController;
-	
+
 	return visualised_args_controller;
 }
 
@@ -300027,7 +300027,7 @@ function requireTrace_controller () {
 	    }
 	    return [visibleStartSec, visibleEndSec];
 	}
-	
+
 	return trace_controller;
 }
 
@@ -300083,7 +300083,7 @@ function requireApp_controller () {
 	    }
 	}
 	app_controller.AppController = AppController;
-	
+
 	return app_controller;
 }
 
@@ -300136,7 +300136,7 @@ function requireController () {
 	    }
 	}
 	controller.runControllers = runControllers;
-	
+
 	return controller;
 }
 
@@ -300198,7 +300198,7 @@ function requireCookie_consent () {
 	    }
 	}
 	cookie_consent.CookieConsent = CookieConsent;
-	
+
 	return cookie_consent;
 }
 
@@ -307269,7 +307269,7 @@ function requireLegacy_trace_viewer () {
 	    });
 	}
 	legacy_trace_viewer.openBufferWithLegacyTraceViewer = openBufferWithLegacyTraceViewer;
-	
+
 	return legacy_trace_viewer;
 }
 
@@ -307363,7 +307363,7 @@ function requireTrace_converter () {
 	    });
 	}
 	trace_converter.convertTraceToPprofAndDownload = convertTraceToPprofAndDownload;
-	
+
 	return trace_converter;
 }
 
@@ -308234,7 +308234,7 @@ Alternatively, connect to a trace_processor_shell --httpd instance.
 	    };
 	    return (0, mithril_1.default)('a.trace-file-name', linkProps, title);
 	}
-	
+
 	return sidebar;
 }
 
@@ -308300,7 +308300,7 @@ function requireTask_tracker () {
 	}
 	task_tracker.TaskTracker = TaskTracker;
 	task_tracker.taskTracker = new TaskTracker();
-	
+
 	return task_tracker;
 }
 
@@ -308505,7 +308505,7 @@ function requireTopbar () {
 		    }
 		}
 		exports.Topbar = Topbar;
-		
+
 } (topbar));
 	return topbar;
 }
@@ -308578,7 +308578,7 @@ function requirePages () {
 	    return pageComponent;
 	}
 	pages.createPage = createPage;
-	
+
 	return pages;
 }
 
@@ -308698,7 +308698,7 @@ function requireQuery_history () {
 		const queryHistoryEntryValidator = (0, validators_1.record)({ query: (0, validators_1.str)(), starred: (0, validators_1.bool)() });
 		const queryHistoryValidator = (0, validators_1.arrayOf)(queryHistoryEntryValidator);
 		exports.queryHistoryStorage = new HistoryStorage();
-		
+
 } (query_history));
 	return query_history;
 }
@@ -308903,7 +308903,7 @@ function requireAnalyze_page () {
 	        }), (0, mithril_1.default)(query_history_1.QueryHistoryComponent));
 	    },
 	});
-	
+
 	return analyze_page;
 }
 
@@ -309008,7 +309008,7 @@ function requireSchema () {
 	    return schema;
 	}
 	schema.getSchema = getSchema;
-	
+
 	return schema;
 }
 
@@ -309044,7 +309044,7 @@ function requireDebug () {
 	    window.Actions = actions_1.Actions;
 	}
 	debug.registerDebugGlobals = registerDebugGlobals;
-	
+
 	return debug;
 }
 
@@ -309116,7 +309116,7 @@ function requireFile_drop_handler () {
 	    }
 	    return false;
 	}
-	
+
 	return file_drop_handler;
 }
 
@@ -309224,7 +309224,7 @@ function requireFlags_page () {
 	        }, 'Reset all below'), feature_flags_1.featureFlags.allFlags().map((flag) => (0, mithril_1.default)(FlagWidget, { flag }))));
 	    },
 	});
-	
+
 	return flags_page;
 }
 
@@ -309271,7 +309271,7 @@ function requireHome_page () {
 	        (0, mithril_1.default)(`label[for=chan_${chan}]`, chan),
 	    ];
 	}
-	
+
 	return home_page;
 }
 
@@ -309360,7 +309360,7 @@ function requireLive_reload () {
 	        }
 	    }, rapidReloadFlag.get() ? 0 : 1000);
 	}
-	
+
 	return live_reload;
 }
 
@@ -309448,7 +309448,7 @@ function requireMetrics_page () {
 	        return (0, mithril_1.default)('.metrics-page', (0, mithril_1.default)(MetricPicker), (0, mithril_1.default)(MetricResult));
 	    },
 	});
-	
+
 	return metrics_page;
 }
 
@@ -309486,9 +309486,7 @@ function requirePost_message_handler () {
 	// instead require a user interaction.
 	function isTrustedOrigin(origin) {
 	    const TRUSTED_ORIGINS = [
-	        'https://chrometto.googleplex.com',
-	        'https://uma.googleplex.com',
-	        'https://android-build.googleplex.com',
+            'https://dashboard.lepton.ai'
 	    ];
 	    if (origin === window.origin)
 	        return true;
@@ -309695,7 +309693,7 @@ function requirePost_message_handler () {
 	    return wrapped.perfetto.buffer !== undefined &&
 	        wrapped.perfetto.title !== undefined;
 	}
-	
+
 	return post_message_handler;
 }
 
@@ -309971,7 +309969,7 @@ function requireRecord_widgets () {
 	    }
 	}
 	record_widgets.CategoriesCheckboxList = CategoriesCheckboxList;
-	
+
 	return record_widgets;
 }
 
@@ -310070,7 +310068,7 @@ function requireAdvanced_settings () {
 	    }
 	}
 	advanced_settings.AdvancedSettings = AdvancedSettings;
-	
+
 	return advanced_settings;
 }
 
@@ -310241,7 +310239,7 @@ function requireAndroid_settings () {
 	    }
 	}
 	android_settings.AndroidSettings = AndroidSettings;
-	
+
 	return android_settings;
 }
 
@@ -310358,7 +310356,7 @@ function requireChrome_settings () {
 	    }
 	}
 	chrome_settings.ChromeSettings = ChromeSettings;
-	
+
 	return chrome_settings;
 }
 
@@ -310387,7 +310385,7 @@ function requireRecording_sections () {
 	Object.defineProperty(recording_sections, "__esModule", { value: true });
 	recording_sections.POLL_INTERVAL_MS = void 0;
 	recording_sections.POLL_INTERVAL_MS = [250, 500, 1000, 2500, 5000, 30000, 60000];
-	
+
 	return recording_sections;
 }
 
@@ -310461,7 +310459,7 @@ function requireCpu_settings () {
 	    }
 	}
 	cpu_settings.CpuSettings = CpuSettings;
-	
+
 	return cpu_settings;
 }
 
@@ -310509,7 +310507,7 @@ function requireGpu_settings () {
 	    }
 	}
 	gpu_settings.GpuSettings = GpuSettings;
-	
+
 	return gpu_settings;
 }
 
@@ -310794,7 +310792,7 @@ sample from those.`,
 	    }
 	}
 	memory_settings.MemorySettings = MemorySettings;
-	
+
 	return memory_settings;
 }
 
@@ -310858,7 +310856,7 @@ function requirePower_settings () {
 	    }
 	}
 	power_settings.PowerSettings = PowerSettings;
-	
+
 	return power_settings;
 }
 
@@ -310946,7 +310944,7 @@ function requireRecording_settings () {
 	    }
 	}
 	recording_settings.RecordingSettings = RecordingSettings;
-	
+
 	return recording_settings;
 }
 
@@ -311480,7 +311478,7 @@ function requireRecord_page () {
 		        return (0, mithril_1.default)('.record-page', globals_1.globals.state.recordingInProgress ? (0, mithril_1.default)('.hider') : [], (0, mithril_1.default)('.record-container', RecordHeader(), (0, mithril_1.default)('.record-container-content', recordMenu(routePage), pages)));
 		    },
 		});
-		
+
 } (record_page));
 	return record_page;
 }
@@ -311518,7 +311516,7 @@ function requireRecording_ui_utils () {
 		exports.TRACED_ENDPOINT = '/traced';
 		exports.DEFAULT_ADB_WEBSOCKET_URL = exports.DEFAULT_WEBSOCKET_URL + exports.ADB_ENDPOINT;
 		exports.DEFAULT_TRACED_WEBSOCKET_URL = exports.DEFAULT_WEBSOCKET_URL + exports.TRACED_ENDPOINT;
-		
+
 } (recording_ui_utils));
 	return recording_ui_utils;
 }
@@ -311586,7 +311584,7 @@ function requireReset_interface_modal () {
 	    });
 	}
 	reset_interface_modal.couldNotClaimInterface = couldNotClaimInterface;
-	
+
 	return reset_interface_modal;
 }
 
@@ -312026,7 +312024,7 @@ function requireRecording_page_controller () {
 		    }
 		}
 		exports.RecordingPageController = RecordingPageController;
-		
+
 } (recording_page_controller));
 	return recording_page_controller;
 }
@@ -312095,7 +312093,7 @@ function requireWebsocket_menu_controller () {
 	    }
 	}
 	websocket_menu_controller.WebsocketMenuController = WebsocketMenuController;
-	
+
 	return websocket_menu_controller;
 }
 
@@ -312188,7 +312186,7 @@ function requireRecording_multiple_choice () {
 	    }
 	}
 	recording_multiple_choice.RecordingMultipleChoice = RecordingMultipleChoice;
-	
+
 	return recording_multiple_choice;
 }
 
@@ -312298,7 +312296,7 @@ function requireReset_target_modal () {
 	    return (0, mithril_1.default)('.record-modal-section', (0, mithril_1.default)('.logo-wrapping', (0, mithril_1.default)('i.material-icons', 'web')), (0, mithril_1.default)('.record-modal-description', ...chromeComponents));
 	}
 	const websocketMenuController = new websocket_menu_controller_1.WebsocketMenuController();
-	
+
 	return reset_target_modal;
 }
 
@@ -312665,7 +312663,7 @@ function requireRecord_page_v2 () {
 	            [], getRecordContainer(attrs.subpage));
 	    },
 	});
-	
+
 	return record_page_v2;
 }
 
@@ -312815,7 +312813,7 @@ RPC API: $tpApi
 	        ],
 	    });
 	}
-	
+
 	return rpc_http_dialog;
 }
 
@@ -313063,7 +313061,7 @@ function requireTrace_info_page () {
 	        }));
 	    },
 	});
-	
+
 	return trace_info_page;
 }
 
@@ -313134,7 +313132,7 @@ function requireAndroid_bug_tool () {
 	    return deferred;
 	}
 	android_bug_tool.loadAndroidBugToolInfo = loadAndroidBugToolInfo;
-	
+
 	return android_bug_tool;
 }
 
@@ -313345,7 +313343,7 @@ function requireTrace_url_handler () {
 	        console.error(e);
 	    });
 	}
-	
+
 	return trace_url_handler;
 }
 
@@ -313418,7 +313416,7 @@ function requireSql_types () {
 	    return v;
 	}
 	sql_types.asUtid = asUtid;
-	
+
 	return sql_types;
 }
 
@@ -313451,7 +313449,7 @@ function requireDuration () {
 	    }
 	}
 	duration.Duration = Duration;
-	
+
 	return duration;
 }
 
@@ -313485,7 +313483,7 @@ function requireTimestamp () {
 	    }
 	}
 	timestamp.Timestamp = Timestamp;
-	
+
 	return timestamp;
 }
 
@@ -313580,7 +313578,7 @@ function requireTree () {
 		    }
 		}
 		exports.TreeNode = TreeNode;
-		
+
 } (tree));
 	return tree;
 }
@@ -313683,7 +313681,7 @@ function requireDetails_tab () {
 	details_tab.DebugSliceDetailsTab = DebugSliceDetailsTab;
 	DebugSliceDetailsTab.kind = 'org.perfetto.DebugSliceDetailsTab';
 	bottom_tab_1.bottomTabRegistry.register(DebugSliceDetailsTab);
-	
+
 	return details_tab;
 }
 
@@ -313799,7 +313797,7 @@ function requireAggregation_panel () {
 	    renderCanvas() { }
 	}
 	aggregation_panel.AggregationPanel = AggregationPanel;
-	
+
 	return aggregation_panel;
 }
 
@@ -313865,7 +313863,7 @@ function requireSlice_panel () {
 	    }
 	}
 	slice_panel.SlicePanel = SlicePanel;
-	
+
 	return slice_panel;
 }
 
@@ -314277,7 +314275,7 @@ function requireChrome_slice_panel () {
 	    }
 	}
 	chrome_slice_panel.ChromeSliceDetailsPanel = ChromeSliceDetailsPanel;
-	
+
 	return chrome_slice_panel;
 }
 
@@ -314329,7 +314327,7 @@ function requireCounter_panel () {
 	    renderCanvas() { }
 	}
 	counter_panel.CounterDetailsPanel = CounterDetailsPanel;
-	
+
 	return counter_panel;
 }
 
@@ -314380,7 +314378,7 @@ function requireCpu_profile_panel () {
 	    renderCanvas() { }
 	}
 	cpu_profile_panel.CpuProfileDetailsPanel = CpuProfileDetailsPanel;
-	
+
 	return cpu_profile_panel;
 }
 
@@ -314673,7 +314671,7 @@ function requireFlamegraph_panel () {
 	    }
 	}
 	flamegraph_panel.FlamegraphDetailsPanel = FlamegraphDetailsPanel;
-	
+
 	return flamegraph_panel;
 }
 
@@ -314854,7 +314852,7 @@ function requireFlow_events_panel () {
 		    renderCanvas(_ctx, _size) { }
 		}
 		exports.FlowEventsAreaSelectedPanel = FlowEventsAreaSelectedPanel;
-		
+
 } (flow_events_panel));
 	return flow_events_panel;
 }
@@ -314898,7 +314896,7 @@ function requireCheckbox () {
 	    }
 	}
 	checkbox.Checkbox = Checkbox;
-	
+
 	return checkbox;
 }
 
@@ -314938,7 +314936,7 @@ function requireEmpty_state () {
 	    }
 	}
 	empty_state.EmptyState = EmptyState;
-	
+
 	return empty_state;
 }
 
@@ -315105,7 +315103,7 @@ function requireMultiselect () {
 	    }
 	}
 	multiselect.MultiSelect = MultiSelect;
-	
+
 	return multiselect;
 }
 
@@ -315281,7 +315279,7 @@ function requireFtrace_panel () {
 	    renderCanvas() { }
 	}
 	ftrace_panel.FtracePanel = FtracePanel;
-	
+
 	return ftrace_panel;
 }
 
@@ -315417,7 +315415,7 @@ function requireLogs_filters () {
 		    }
 		}
 		exports.LogsFilters = LogsFilters;
-		
+
 } (logs_filters));
 	return logs_filters;
 }
@@ -315559,7 +315557,7 @@ function requireLogs_panel () {
 	    renderCanvas() { }
 	}
 	logs_panel.LogPanel = LogPanel;
-	
+
 	return logs_panel;
 }
 
@@ -315859,7 +315857,7 @@ function requireNotes_panel () {
 	notes_panel.NotesEditorTab = NotesEditorTab;
 	NotesEditorTab.kind = 'org.perfetto.NotesEditorTab';
 	bottom_tab_1.bottomTabRegistry.register(NotesEditorTab);
-	
+
 	return notes_panel;
 }
 
@@ -316066,7 +316064,7 @@ function requireTrack_group_panel () {
 	function StripPathFromExecutable(path) {
 	    return path.split('/').slice(-1)[0];
 	}
-	
+
 	return track_group_panel;
 }
 
@@ -316328,7 +316326,7 @@ function requireFlow_events_renderer () {
 	    }
 	}
 	flow_events_renderer.FlowEventsRenderer = FlowEventsRenderer;
-	
+
 	return flow_events_renderer;
 }
 
@@ -316719,7 +316717,7 @@ function requirePanel_container () {
 	    }
 	}
 	panel_container.PanelContainer = PanelContainer;
-	
+
 	return panel_container;
 }
 
@@ -316857,7 +316855,7 @@ function requireReorderable_cells () {
 	    }
 	}
 	reorderable_cells.ReorderableCellGroup = ReorderableCellGroup;
-	
+
 	return reorderable_cells;
 }
 
@@ -316928,7 +316926,7 @@ function requirePivot_table_argument_popup () {
 	                onclick: () => {
 	                    this.setArgument(attrs, option);
 	                },
-	            }, option.substring(0, index), 
+	            }, option.substring(0, index),
 	            // Highlight the matching part with bold font
 	            (0, mithril_1.default)('strong', this.argument), option.substring(index + this.argument.length)));
 	        }
@@ -316946,7 +316944,7 @@ function requirePivot_table_argument_popup () {
 	    }
 	}
 	pivot_table_argument_popup.ArgumentPopup = ArgumentPopup;
-	
+
 	return pivot_table_argument_popup;
 }
 
@@ -317018,7 +317016,7 @@ function requireAttribute_modal_holder () {
 	    }
 	}
 	attribute_modal_holder.AttributeModalHolder = AttributeModalHolder;
-	
+
 	return attribute_modal_holder;
 }
 
@@ -317400,7 +317398,7 @@ function requirePivot_table () {
 	        const pivotTableHeaders = state.selectedPivots.map((pivot) => this.renderPivotColumnHeader(queryResult, pivot, selectedPivots));
 	        const removeItem = state.queryResult.metadata.aggregationColumns.length > 1;
 	        const aggregationTableHeaders = state.queryResult.metadata.aggregationColumns.map((aggregation, index) => this.renderAggregationHeaderCell(aggregation, index, removeItem));
-	        return (0, mithril_1.default)('table.pivot-table', (0, mithril_1.default)('thead', 
+	        return (0, mithril_1.default)('table.pivot-table', (0, mithril_1.default)('thead',
 	        // First row of the table, containing names of pivot and aggregation
 	        // columns, as well as popup menus to modify the columns. Last cell
 	        // is empty because of an extra column with "drill down" button for
@@ -317437,7 +317435,7 @@ function requirePivot_table () {
 	    }
 	}
 	pivot_table.PivotTable = PivotTable;
-	
+
 	return pivot_table;
 }
 
@@ -317568,7 +317566,7 @@ function requireSlice_details_panel () {
 	    renderCanvas() { }
 	}
 	slice_details_panel.SliceDetailsPanel = SliceDetailsPanel;
-	
+
 	return slice_details_panel;
 }
 
@@ -317629,7 +317627,7 @@ function requireSql_utils () {
 	    return n;
 	}
 	sql_utils.fromNumNull = fromNumNull;
-	
+
 	return sql_utils;
 }
 
@@ -317728,7 +317726,7 @@ function requireThread_and_process_info () {
 	    return getDisplayName(info?.name, info?.tid);
 	}
 	thread_and_process_info.getThreadName = getThreadName;
-	
+
 	return thread_and_process_info;
 }
 
@@ -317867,7 +317865,7 @@ function requireValue () {
 	    return (0, mithril_1.default)('table.auto-layout', rows);
 	}
 	value.renderDict = renderDict;
-	
+
 	return value;
 }
 
@@ -318031,7 +318029,7 @@ function requireThread_state () {
 	    return (0, value_1.dict)(result);
 	}
 	thread_state.threadStateToDict = threadStateToDict;
-	
+
 	return thread_state;
 }
 
@@ -318100,7 +318098,7 @@ function requireThread_state_tab () {
 	thread_state_tab.ThreadStateTab = ThreadStateTab;
 	ThreadStateTab.kind = 'org.perfetto.ThreadStateTab';
 	bottom_tab_1.bottomTabRegistry.register(ThreadStateTab);
-	
+
 	return thread_state_tab;
 }
 
@@ -318451,7 +318449,7 @@ function requireDetails_panel () {
 	    }
 	}
 	details_panel.DetailsPanel = DetailsPanel;
-	
+
 	return details_panel;
 }
 
@@ -318494,7 +318492,7 @@ function requireDrag_strategy () {
 	    }
 	}
 	drag_strategy.DragStrategy = DragStrategy;
-	
+
 	return drag_strategy;
 }
 
@@ -318529,7 +318527,7 @@ function requireBorder_drag_strategy () {
 	    }
 	}
 	border_drag_strategy.BorderDragStrategy = BorderDragStrategy;
-	
+
 	return border_drag_strategy;
 }
 
@@ -318560,7 +318558,7 @@ function requireInner_drag_strategy () {
 	    }
 	}
 	inner_drag_strategy.InnerDragStrategy = InnerDragStrategy;
-	
+
 	return inner_drag_strategy;
 }
 
@@ -318604,7 +318602,7 @@ function requireOuter_drag_strategy () {
 	    }
 	}
 	outer_drag_strategy.OuterDragStrategy = OuterDragStrategy;
-	
+
 	return outer_drag_strategy;
 }
 
@@ -318802,7 +318800,7 @@ function requireOverview_timeline_panel () {
 	}
 	overview_timeline_panel.OverviewTimelinePanel = OverviewTimelinePanel;
 	OverviewTimelinePanel.HANDLE_SIZE_PX = 5;
-	
+
 	return overview_timeline_panel;
 }
 
@@ -318877,7 +318875,7 @@ function requireTickmark_panel () {
 	    }
 	}
 	tickmark_panel.TickmarkPanel = TickmarkPanel;
-	
+
 	return tickmark_panel;
 }
 
@@ -318935,7 +318933,7 @@ function requireTime_axis_panel () {
 	    }
 	}
 	time_axis_panel.TimeAxisPanel = TimeAxisPanel;
-	
+
 	return time_axis_panel;
 }
 
@@ -319110,7 +319108,7 @@ function requireTime_selection_panel () {
 	    }
 	}
 	time_selection_panel.TimeSelectionPanel = TimeSelectionPanel;
-	
+
 	return time_selection_panel;
 }
 
@@ -319379,7 +319377,7 @@ function requireViewer_page () {
 	        return (0, mithril_1.default)(TraceViewer);
 	    },
 	});
-	
+
 	return viewer_page;
 }
 
@@ -319428,7 +319426,7 @@ function requireArray_utils () {
 	    return x.length == new Set(x).size;
 	}
 	array_utils.allUnique = allUnique;
-	
+
 	return array_utils;
 }
 
@@ -319517,7 +319515,7 @@ function requireComparison_utils () {
 	    return columnTypeKind(a) - columnTypeKind(b);
 	}
 	comparison_utils.compareUniversal = compareUniversal;
-	
+
 	return comparison_utils;
 }
 
@@ -319673,7 +319671,7 @@ function requireTable () {
 	    }
 	}
 	table.Table = Table;
-	
+
 	return table;
 }
 
@@ -319734,7 +319732,7 @@ function requireTable_showcase () {
 	    }
 	}
 	table_showcase.TableShowcase = TableShowcase;
-	
+
 	return table_showcase;
 }
 
@@ -319827,7 +319825,7 @@ function requireMenu () {
 	    }
 	}
 	menu.PopupMenu2 = PopupMenu2;
-	
+
 	return menu;
 }
 
@@ -319866,7 +319864,7 @@ function require_switch () {
 	    }
 	}
 	_switch.Switch = Switch;
-	
+
 	return _switch;
 }
 
@@ -320267,7 +320265,7 @@ function requireWidgets_page () {
 	        }));
 	    },
 	});
-	
+
 	return widgets_page;
 }
 
@@ -320587,7 +320585,7 @@ function requireFrontend () {
 	    });
 	}
 	main();
-	
+
 	return frontend;
 }
 
