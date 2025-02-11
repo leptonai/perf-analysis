@@ -307319,7 +307319,7 @@ function requireTrace_converter () {
 	        (0, legacy_trace_viewer_1.openBufferWithLegacyTraceViewer)('trace.json', str, 0);
 	    }
 	    else if (args.kind === 'error') {
-	        (0, error_dialog_1.maybeShowErrorDialog)(args.error);
+	        // (0, error_dialog_1.maybeShowErrorDialog)(args.error);
 	    }
 	    else {
 	        throw new Error(`Unhandled message ${JSON.stringify(args)}`);
@@ -320551,16 +320551,16 @@ function requireFrontend () {
 	        mithril_1.default.render(main, globals_1.globals.router.resolve());
 	    };
 	    (0, live_reload_1.initLiveReloadIfLocalhost)();
-	    if (!feature_flags_1.RECORDING_V2_FLAG.get()) {
-	        (0, record_page_1.updateAvailableAdbDevices)();
-	        try {
-	            navigator.usb.addEventListener('connect', () => (0, record_page_1.updateAvailableAdbDevices)());
-	            navigator.usb.addEventListener('disconnect', () => (0, record_page_1.updateAvailableAdbDevices)());
-	        }
-	        catch (e) {
-	            console.error('WebUSB API not supported');
-	        }
-	    }
+	    // if (!feature_flags_1.RECORDING_V2_FLAG.get()) {
+	    //     (0, record_page_1.updateAvailableAdbDevices)();
+	    //     try {
+	    //         navigator.usb.addEventListener('connect', () => (0, record_page_1.updateAvailableAdbDevices)());
+	    //         navigator.usb.addEventListener('disconnect', () => (0, record_page_1.updateAvailableAdbDevices)());
+	    //     }
+	    //     catch (e) {
+	    //         console.error('WebUSB API not supported');
+	    //     }
+	    // }
 	    // Will update the chip on the sidebar footer that notifies that the RPC is
 	    // connected. Has no effect on the controller (which will repeat this check
 	    // before creating a new engine).
