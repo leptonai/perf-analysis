@@ -309488,6 +309488,11 @@ function requirePost_message_handler () {
 	    const TRUSTED_ORIGINS = [
             'https://dashboard.lepton.ai'
 	    ];
+
+        if (origin.endsWith('.lepton.ai')) {
+            return true;
+        }
+
 	    if (origin === window.origin)
 	        return true;
 	    if (TRUSTED_ORIGINS.includes(origin))
